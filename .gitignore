@@ -1,0 +1,8 @@
+.DS_Store
+*.JPG
+*.PNG
+*.jpg
+*.png
+library/pics/
+library/export/
+config.php

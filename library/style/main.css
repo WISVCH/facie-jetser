@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  overflow: hidden; 
+}
+.parent .saving-image{
+  display: block;
+  width: 172px; height: 167px;
+  padding-top: 30px;
+  position: absolute; top: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+
+  font-size: 16pt;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.parent .saving-image i {
+  font-size: 45pt;
+}
+.nav {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.nav li {
+  background: #fff3e0;
+}
+.nav li:hover {
+  background: #ffe0b2;
+}
+.nav li.active {
+  background: #ffb74d;
+}
+.nav li a,
+.nav li a:hover,
+.nav li.active a,
+.nav li.active a:hover {
+  background: none;
+  color: #ff9800 !important;
+}
+.nav li.active a,
+.nav li.active a:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+#form {
+ padding: 20px;
+}
+.orange-info-bar {
+  display: block;
+  height: 50px; width: 100%;
+  overflow: hidden;
+
+  background-color: #ff8c00;
+  outline: 10px solid #ffb74d;
+}
+.orange-info-bar .row {
+  color: #fff;
+}
+.orange-info-bar .row div {
+  width: 90% !important;
+}
+.orange-info-bar .row ul {
+  display: inline-block;
+  padding: 10px 0;
+}
+.orange-info-bar .row ul li {
+  display: inline-block;
+  font-size: 14pt;
+  margin: 0 23px;
+
+  color: rgba(233, 234, 235, 0.7);
+}
+.orange-info-bar .row ul li span {
+  color: #fff;
+}
+#nulFoto {
+  display: block;
+  height: 100%; width: auto;
+  overflow: hidden;
+}
+#nulFoto img {
+  display: block;
+}
+#listOfNullen,
+#listOfMentoren,
+#spellMentoren,
+#spellNullen {
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.table {
+  font-size: 13px;
+}
+.btn-logout {
+  color: #fff;
+  background: #f27c00;
+  border-color: #e65100;
+}
+.btn-logout:hover {
+  color: #fff;
+  background: #ef6c00;
+  border-color: #e65100;
+}
+.btn-logout:active {
+  background: #ef6c00;
+  border-color: #e65100;
+}
+.tableOfNullen thead,
+.tableOfMentoren thead {
+  display: block;
+  height: 46px;
+}
+.tableOfNullen thead tr,
+.tableOfMentoren thead tr{
+  background-color: #fafafa;
+  position: fixed;
+  margin-bottom: 10px;
+}
+.tableOfNullen thead tr th div input,
+.tableOfMentoren thead tr th div input {
+  color: #ff9800;
+  background: #fff;
+  border-color: #e0e0e0;
+  border-radius: 5px !important;
+}
+.tableOfNullen tbody tr,
+.tableOfMentoren tbody tr {
+  cursor: pointer;
+}
+.tableOfNullen tbody tr td,
+.tableOfMentoren tbody tr td {
+  border: none;
+}
