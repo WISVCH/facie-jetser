@@ -3,6 +3,9 @@ FROM php:7.2-apache
 # Install mysql extension
 RUN apt-get update && docker-php-ext-install mysqli
 
+#Print conf.d contents
+RUN ls $PHP_INI_DIR/conf.d/
+
 # Install CH CA certificate
 RUN curl -so /etc/ssl/certs/wisvch.crt https://ch.tudelft.nl/certs/wisvch.crt && \
     chmod 644 /etc/ssl/certs/wisvch.crt && \
