@@ -12,6 +12,8 @@ services:
         image: mysql
         command: --default-authentication-plugin=mysql_native_password
         restart: always
+        volumes:
+          - "./database:/docker-entrypoint-initdb.d"
         environment:
             MYSQL_ROOT_PASSWORD: faciePassword
-
+            MYSQL_DATABASE: facie_jetser
